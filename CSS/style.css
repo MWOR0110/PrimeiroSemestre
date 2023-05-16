@@ -1,0 +1,58 @@
+
+body {
+    margin: 0;
+    place-content: center;
+    color: white;
+    background-image: url(/Image/PixelArt.gif);
+    
+  }
+
+.box {
+width: 90px;
+aspect-ratio: 1;
+clip-path: polygon(93.30% 75.00%,50.00% 100.00%,6.70% 75.00%,6.70% 25.00%,50.00% 0.00%,93.30% 25.00%,93.30% 75.00%,90.70% 26.50%,50.00% 3.00%,9.30% 26.50%,9.30% 73.50%,50.00% 97.00%,90.70% 73.50%,90.70% 26.50%);
+display: grid;
+
+}
+.box:before {
+content: "";
+background: conic-gradient(#545353 30%,hsl(0 100% 70%) 90%,#000);
+animation: r 2s ease-in-out infinite;
+}
+@keyframes r {
+to {
+    rotate: 1turn;
+    filter: hue-rotate(1turn);
+}
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+#Curriculo #nome{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+.info{
+    color: rgb(0, 0, 0);
+    fill-opacity: initial;
+}
+
+#Curriculo{
+    background-color:darkblue;
+    opacity: 1;
+    border-right: 41px;
+    width: 400px;
+    opacity: 0.5;
+}
+
+#info_add{
+
+}
