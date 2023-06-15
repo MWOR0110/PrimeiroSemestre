@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banco de Dados</title>
+        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="icon" type="image/png" href="/Image/Senailogo.png"/>
+    </head>
+    <body>
+        <header> 
+            <p id="link"><a href="./index.html" >Inicio </a></p>
+            <p id="link" ><a href="./LdP.html">Linguagem de Programação  </p>
+            <p id="link"><a href="./Robotica.html">Automação Industrial </a></p>
+            <p id="link"><a href="./CienciaDeDados.html">Ciência de Dados </a></button>
+            <p id="link"><a href="./Redes.html">Redes de Computadores </a></p>
+
+        
+        <p></p>
+    </header>
+
+    <section>
+        <div class="conteudo" id="Scrum">
+            <h1>O que é um Banco de Dados ?</h1>
+            <p>É uma estruturas física onde os dados/informação é mantida por um período de tempo um período de tempo incerto, e são utilizados sistemas para gerenciar este banco.</p>
+            <p>Alguns deles: Oracle, MySQL, SQL Server, etc.</p>
+
+        </div>
+
+        <div class="conteudo" id="Scrum">
+            <h1>O que é um Banco de Dados ?</h1>
+            <img src="/Image/Banco1.jpeg" width="500">
+
+            <p>
+                Um banco de dados é uma coleção organizada de informações estruturadas, normalmente armazenadas eletronicamente em um sistema computacional. É projetado para armazenar, gerenciar e recuperar dados de forma eficiente e segura.
+            </p>
+
+
+        </div>
+        <div class="conteudo" id="Scrum">
+            <h3>SGBD → Sistemas de Gerenciamento de Banco de Dados</h3>
+
+            <p>é um software que permite o gerenciamento de bancos de dados, oferecendo recursos para criar, manipular, organizar e recuperar informações armazenadas de forma estruturada. O SGBD atua como uma camada intermediária entre os usuários e o banco de dados, facilitando o acesso e o controle dos dados de maneira eficiente e segura.</p>
+
+            <img src="/Image/SGBD.jpg" width="300">
+
+        </div>
+        <div class="conteudo" id="Scrum">
+            <h3>
+                4 PILARES DO BD RELACIONAL (ACID)
+            </h3>
+
+            <p>
+                Atomicidade - assegura que uma transação seja executada completamente ou não seja executada de forma alguma. Em outras palavras, a transação não será deixada incompleta. Se uma operação dentro da transação falhar, os dados não serão corrompidos durante o processo e serão revertidos ao seu estado original.</p>
+
+            <p>Consistência - Refere-se à garantia de que uma transação levará o banco de dados de um estado válido para outro estado válido. Isso significa que a transação deve seguir todas as regras e restrições definidas para o banco de dados. Se uma transação violar essas regras ou deixar o banco de dados em um estado inválido, ela será desfeita, e os dados retornarão ao estado anterior à transação.</p>
+            <p>Isolamento - O isolamento garante que uma transação em execução seja invisível para outras transações concorrentes. Em outras palavras, cada transação deve ser executada como se fosse a única operação em andamento no banco de dados. Isso evita problemas como leituras sujas, onde uma transação lê dados modificados por outra transação antes que as alterações sejam confirmadas, ou escritas sujas, onde uma transação sobrescreve dados que outra transação está lendo. O isolamento garante que cada transação seja executada de forma isolada e independente das demais.</p>
+            <p>Durabilidade - A durabilidade garante que os resultados de uma transação sejam permanentes e persistentes, mesmo em caso de falhas ou reinicializações do sistema. Isso significa que, uma vez que uma transação seja confirmada, seus efeitos serão armazenados de forma segura e não serão perdidos, mesmo que ocorra uma falha no sistema. A durabilidade garante a confiabilidade e a integridade dos dados no longo prazo.</p>
+        </div>
+        <div class="conteudo" id="Scrum">
+            <h3>MODELAGEM DE BD</h3>
+            <p>
+                A modelagem de banco de dados antes do desenvolvimento é importante porque traz eficiência e clareza ao sistema. Ao planejar antecipadamente, é possível otimizar a estrutura do banco, resultando em consultas mais rápidas e eficientes. Além disso, a modelagem facilita a compreensão do sistema, economiza tempo evitando retrabalhos e permite uma manutenção e escalabilidade mais fáceis. Em resumo, a modelagem prévia do banco de dados traz benefícios em termos de desempenho, clareza e eficiência no desenvolvimento.</p>
+        </div>
+
+        <div class="conteudo" id="Scrum">
+            <h3>TIPOS DE ENTIDADES, ATRIBUTOS E RELACIONAMENTO</h3>
+            <p>Na modelagem de banco de dados, existem três elementos principais: entidades, atributos e relacionamentos.Esses três elementos são fundamentais na modelagem de banco de dados. Através da identificação correta das entidades, definição dos atributos e estabelecimento dos relacionamentos adequados, é possível criar uma estrutura organizada e eficiente para armazenar e recuperar as informações do sistema. Vou explicar cada um deles:</p>
+
+            <ul>
+                <li>Entidades: As entidades representam os objetos ou conceitos do mundo real que serão armazenados no banco de dados. Podem ser pessoas, objetos, lugares, eventos, entre outros. Cada entidade é representada por uma tabela no banco de dados e possui atributos que descrevem suas características.</li>
+                <li>Atributos: Os atributos são as características ou propriedades das entidades. Eles descrevem as informações que queremos armazenar sobre as entidades. Por exemplo, em uma entidade "Cliente", os atributos podem incluir nome, idade, endereço, telefone, etc. Cada atributo possui um tipo de dados, como texto, número, data, entre outros.</li>
+                <li>Relacionamentos: Os relacionamentos representam as associações entre entidades. Eles descrevem como as entidades estão conectadas umas às outras. Por exemplo, em um sistema de vendas, pode haver um relacionamento entre as entidades "Cliente" e "Pedido", indicando que um cliente pode fazer vários pedidos. Os relacionamentos são representados por chaves estrangeiras, que são atributos que referenciam as chaves primárias de outras entidades.</li>
+            </ul>
+        </div>
+
+        <div class="conteudo" id="Scrum">
+            <h3>Cardinalidade:</h3>
+            <p>é um conceito importante na modelagem de banco de dados que descreve a relação numérica entre entidades em um relacionamento. Ela indica quantas instâncias de uma entidade estão associadas a uma instância de outra entidade por meio de um relacionamento específico.</p>
+
+            <ul>
+                <li>1:1 - 1 entidade só conversa com 1 entidade.</li>
+                <li>1:n - 1 entidade conversa com n entidades diferentes.</li>
+                <li>n:m - diferentes entidades falam com n diferentes entidades.</li>
+            </ul>
+            
+        </div>
+
+        <div class="conteudo" id="Scrum">
+            <h3>Comandos DDL - Data Definition Language</h3>
+            <ul>
+                <li>CREATE TABLE - é usada no SQL para criar uma nova tabela no banco de dados, definindo o nome da tabela, as colunas e seus tipos de dados. É possível adicionar restrições e configurações adicionais.</li>
+                <li>ALTER TABLE - Ela permite adicionar, modificar ou excluir colunas, alterar o tipo de dados das colunas, adicionar restrições, renomear a tabela, entre outras alterações. Essa instrução é útil quando há necessidade de fazer ajustes na estrutura de uma tabela já existente.</li>
+                <li>DROP TABLE - Ela remove completamente a tabela e todos os dados contidos nela, resultando na perda permanente das informações. É uma operação irreversível e deve ser usada com cuidado.</li>
+            </ul>
+        </div>
+
+        <div class="conteudo" id="Scrum">
+            <h3>Comandos DML - Data Manipulation Language</h3>
+            <ul>
+                <li>INSERT - é usada no SQL para inserir novos registros em uma tabela existente. Ela permite adicionar dados em uma ou mais colunas da tabela.</li>
+                <li>UPDATE - é usada no SQL para modificar os dados existentes em uma tabela. Ela permite atualizar os valores de uma ou mais colunas em registros específicos da tabela. </li>
+                <li>DELETE - é usada no SQL para excluir registros de uma tabela existente. Ela permite remover um ou mais registros com base em determinadas condições.</li>
+             
+            </ul>
+        </div>
+        
+        <div class="conteudo" id="Scrum">
+            <h3>Comandos DQL - Data Query Language</h3>
+            <ul>
+                <li>SELECT - é usada no SQL para recuperar dados de uma tabela ou exibir resultados de uma consulta. Ela permite selecionar colunas específicas ou todas as colunas de uma tabela.</li>
+                <li>ORDER BY -  é usada na instrução "SELECT" do SQL para classificar os resultados da consulta com base em uma ou mais colunas específicas em ordem ascendente ou descendente. Isso permite que você ordene os resultados de acordo com suas necessidades.</li>
+                <li>JOIN - é usada no SQL para combinar registros de duas ou mais tabelas com base em uma condição especificada. Ela permite realizar operações de junção, que são essenciais para recuperar dados relacionados armazenados em várias tabelas.</li>
+                <li>GROUP BY - é usada no SQL para agrupar registros com base em valores específicos de uma ou mais colunas. Ela permite a criação de grupos de registros com base em critérios comuns e a aplicação de funções agregadas</li>
+            </ul>
+        </div>
+        <div class="conteudo" id="Scrum">
+            <h3>NORMALIZAÇÃO</h3>
+            <ul style="list-style: none;">
+                <li>
+                    1ª Forma normal
+                </li>
+                <p>Atributos compostos devem ser divididos em atributos individuais para que cada célula contenha apenas um valor. Atributos multivalorados devem ser representados como entidades separadas, com uma nova chave primária e relacionados à entidade principal.</p>
+                <li>2ª Forma normal</li>
+
+                <p>
+                    O banco tem que estar na 1ª forma normal.
+                </p>
+                <p>Todos os atributos de uma tabela fora a PK tem que depender unicamente da PK composta da tabela. sem depender parcialmente de uma ou outra, e sim das duas em conjunto.</p>
+                <li>3ª Forma normal</li>
+                <p>Banco precisa estar na 2ª forma normal</p>
+                <p>Cada atributo não pode depender de outro atributo que não seja a PK em si.</p>
+            </ul>
+        </div>
+
+
+
+    </section>
+        
+
+    <footer>
+        <p>Diretos Autorais de Misael Willian</p>
+    </footer>
+    </body>
+</html>
