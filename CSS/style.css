@@ -82,26 +82,43 @@ header h3{
 }
 
 #Curriculo{
-    border-right: 41px;
-    width: 400px;
-    color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction:column;
+    width: auto;
+    background-color: #35359398;
+    padding: 20px;
+    justify-content: left;
+    margin-right: 40%;
 }
-
-#Curriculo #dados_pessoais{
+    
+#dados{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 20px;
-
-}
-#Curriculo #dados_pessoais p{
-    margin-bottom: 0px;
-    margin-top: 10px;
+    flex-direction:row;
+    width: auto;
+    padding: 20px;
+    justify-content: left;
+ 
     
 }
+#imagem{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30%;
+
+}
+#imagem img{
+    margin: 10px;
+    transition: 0.4s;
+
+}
+
+#imagem :hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+
+}
+
+
 
 .info{
     color: rgb(0, 0, 0);
